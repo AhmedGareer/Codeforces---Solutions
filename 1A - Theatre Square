@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+int main ()
+{
+     unsigned long long int n,m,a,total;
+     long double check1,check2;
+
+    cin>>n>>m>>a;
+    if (n>0&&m>0&&a>=1)
+    {
+    check1=ceil(static_cast <double>(n)/static_cast <double>(a));
+    check2=ceil(static_cast <double>(m)/static_cast <double>(a));
+    total=check1*check2;
+    cout<<total;
+    }
+    return 0;
+}
